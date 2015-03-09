@@ -6,6 +6,7 @@ libraryDependencies ++= Seq(
   awsJavaSdk exclude("commons-logging", "commons-logging"),
   commonsIO,
   allenAiCommon,
+  allenAiPipeline,
   allenAiTestkit % "test,it",
   Logging.logbackClassic,
   Logging.logbackCore,

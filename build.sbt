@@ -2,6 +2,7 @@ lazy val buildSettings = Seq(
   organization := "org.allenai",
   crossScalaVersions := Seq("2.11.5"),
   scalaVersion <<= crossScalaVersions { (vs: Seq[String]) => vs.head },
+  conflictManager := ConflictManager.default,
   publishMavenStyle := true,
   publishArtifact in Test := false,
   pomIncludeRepository := { _ => false },
